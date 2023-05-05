@@ -49,4 +49,6 @@ cloud_sonnet = WordCloud().generate(txt)
 plt.imshow(cloud_sonnet, interpolation='bilinear')
 plt.axis("off")
 plt.show()
+
+st.set_option('deprecation.showPyplotGlobalUse', False)
 st.pyplot()
