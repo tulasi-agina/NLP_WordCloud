@@ -34,14 +34,14 @@ blob = TextBlob(txt)
 st.write('sentiment of the sonnet is:', blob.sentiment)
 
 if blob.sentiment.polarity < 0:
-  st.write("negative sentiment")
+  st.write("negative sentiment, as polarity<0")
 else:
-  st.write("positive sentiment")
+  st.write("positive sentiment, as polarity>0")
 
 if blob.sentiment.subjectivity < 0.5:
-  st.write("objective")
+  st.write("objective, as subjectivity<0.5")
 else:
-  st.write("subjective")
+  st.write("subjective, as subjectivity>0.5")
 
 cloud_sonnet = WordCloud().generate(txt)
 # cloud_sonnet # returns a wordcloud object: <wordcloud.wordcloud.WordCloud at 0x7f6611fd8dc0>
