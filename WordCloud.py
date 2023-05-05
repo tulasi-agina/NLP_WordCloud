@@ -12,7 +12,7 @@ st.title("Word Cloud of Shakespeare Sonnets")
 
 st.header("Sonnet Cloud")
 
-txt = st.text_area('''
+txt = st.text_area('Enter a Sonnet to analyze', '''
   Shall I compare thee to a summer’s day?
   Thou art more lovely and more temperate:
   Rough winds do shake the darling buds of May,
