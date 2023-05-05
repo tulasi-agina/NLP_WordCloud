@@ -1,4 +1,7 @@
 import streamlit as st
+
+# for steps to install/import textblob and nltk, see https://blog.jcharistech.com/2020/12/14/deploying-nlp-apps-on-streamlit-sharing/
+
 import textblob_download_utils
 from textblob import TextBlob
 
