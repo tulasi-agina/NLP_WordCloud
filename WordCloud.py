@@ -30,8 +30,18 @@ txt = st.text_area('Enter a Sonnet to analyze', '''
   ''')
 # st.write('you typed:', txt)
 
-my_valence = TextBlob(txt)
-st.write('sentiment of the sonnet is:', my_valence.sentiment)
+blob = TextBlob(txt)
+st.write('sentiment of the sonnet is:', blob.sentiment)
+
+if blob.sentiment.polarity < 0:
+  st.write("negative sentiment")
+else:
+  st.write("positive sentiment")
+
+if blob.sentiment.subjectivity < 0.5:
+  st.write("objective")
+else:
+  st.write("subjective")
 
 cloud_sonnet = WordCloud().generate(txt)
 # cloud_sonnet # returns a wordcloud object: <wordcloud.wordcloud.WordCloud at 0x7f6611fd8dc0>
