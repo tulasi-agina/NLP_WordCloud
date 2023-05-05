@@ -1,4 +1,5 @@
 import streamlit as st
+import textblob_download_utils
 
 st.title("Word Cloud of Shakespeare Sonnets")
 
